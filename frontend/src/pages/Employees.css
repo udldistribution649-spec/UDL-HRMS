@@ -1,0 +1,136 @@
+
+.employee-form {
+  background: var(--card-bg, #fff);
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 24px;
+  margin-top: 20px;
+}
+
+.employee-form h2 {
+  margin: 0 0 24px;
+}
+
+.employee-form h3 {
+  margin: 28px 0 14px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.employee-form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.employee-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.employee-form input:not([type="checkbox"]),
+.employee-form select,
+.employee-search {
+  width: 100%;
+  min-height: 42px;
+  padding: 9px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 7px;
+  background: #fff;
+  color: #111827;
+  font: inherit;
+  box-sizing: border-box;
+}
+
+.employee-check {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center;
+  gap: 10px !important;
+  margin: 12px 0;
+}
+
+.employee-check input {
+  width: 16px;
+  height: 16px;
+}
+
+.employee-form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 30px;
+}
+
+.employee-primary-btn,
+.employee-secondary-btn {
+  padding: 10px 18px;
+  border: 0;
+  border-radius: 7px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.employee-primary-btn {
+  background: #2563eb;
+  color: white;
+}
+
+.employee-secondary-btn {
+  background: #e5e7eb;
+  color: #111827;
+}
+
+.employee-primary-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.employee-table-wrap {
+  overflow-x: auto;
+  margin-top: 20px;
+}
+
+.employee-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+
+.employee-table th,
+.employee-table td {
+  padding: 13px;
+  border-bottom: 1px solid #e5e7eb;
+  text-align: left;
+}
+
+.employee-error,
+.employee-success,
+.employee-message {
+  padding: 12px;
+  margin: 14px 0;
+  border-radius: 7px;
+}
+
+.employee-error {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.employee-success {
+  background: #dcfce7;
+  color: #166534;
+}
+
+@media (max-width: 700px) {
+  .employee-form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .employee-form {
+    padding: 16px;
+  }
+}
