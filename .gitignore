@@ -1,0 +1,53 @@
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+*.egg-info/
+
+# Database and backup files
+backups/
+*.sql
+*.dump
+*.backup
+
+# Employee imports and private data
+imports/
+
+# Frontend dependencies and build output
+node_modules/
+dist/
+.vite/
+
+# IDE and editor
+.idea/
+.vscode/
+
+# Operating system
+.DS_Store
+Thumbs.db
+# Backup files
+*.bak
+# Logs and private exports
+*.log
+*.xlsx
+*.xls
+*.csv
+*.pem
+*.key
+
+# Additional secrets and local environments
+.env.txt
+.env*.txt
+.venv-*/
+*.pem
+*.key
+
+# Editor backup files
+*.bak
